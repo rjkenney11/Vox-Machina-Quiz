@@ -1,0 +1,21 @@
+.jumbotron{
+    height: 740px;
+    width: 800px;
+    margin-top:50px;
+    margin-left: 175px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pirata One', cursive;
+    text-align: center;
+}
+
+.display-4{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pirata One', cursive;
+    text-align: center;
+}
+
+.crit{
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+}
