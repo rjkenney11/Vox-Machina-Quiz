@@ -10,7 +10,6 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pirata+One&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
 
     <title>Vox Machina Quiz</title>
 </head>
@@ -26,19 +25,30 @@
 
     <div class="jumbotron">
         <h1 class="display-4">Vox Machina Quiz</h1>
-        <hr class="my-4">
-        <img class="crit"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM_vae_bNADthnHzG5fzTDI7fSv4LLQFSgOw&usqp=CAU"
-            ALIGN="center" alt="Critical Role Logo">
-        <h2 class= "start-1">The Adventure Begins!</h2>
-        <p>Click the button below to test your knowledge on the mighty band of adventurers known as Vox Machina </p>
-        <p>A few things to know in advance:
+        <div class="question-container hide">
+            <p class="question-holder hide"> "What are the names of the half-elves in the party?",
+            </p>
+            <p> <button class="choiceA-holder hide"> 'Grog, Yasha and Keyleth'
+            </button></p>
+            <p><button class="choiceB-holder hide"> 'Keyleth, Vex and Vax'
+            </button></p>
+            <p><button class="choiceC-holder hide"> 'Pike, Beau and Vax'
+            </button></p>
+        </div>
+        <div class="instructions">
+            <hr class="my-4">
+            <img class="crit"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM_vae_bNADthnHzG5fzTDI7fSv4LLQFSgOw&usqp=CAU"
+                ALIGN="center" alt="Critical Role Logo">
+            <h2 class="start-1">The Adventure Begins!</h2>
+            <p>Click the button below to test your knowledge on the mighty band of adventurers known as Vox Machina </p>
+            <p>A few things to know in advance:
             <p>This quiz is timed!</p>
             <p>For each question you answer incorrectly, you will lose time.</p>
             <p>Answer each question as quickly as possible to reach the highest score!</p>
-        <div><button class="startBtn">Roll Initiative!</button></div>
-        </p>
-
+            <div><button class="startBtn">Roll Initiative!</button></div>
+            </p>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

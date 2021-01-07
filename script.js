@@ -1,27 +1,30 @@
-
-const startButton = document.querySelector("#startBtn");
+const startButton = document.querySelector(".startBtn");
 
 const quiz = document.getElementById("quiz");
-const qContainer = document.getElementById("question-container")
 const question = document.getElementById("question");
 const choiceA = document.getElementById("a");
-const choiceB = document.getElementById("a");
-const choiceC = document.getElementById("a");
+const choiceB = document.getElementById("b");
+const choiceC = document.getElementById("c");
 
 startButton.addEventListener("click", generateQuiz);
 
 function generateQuiz(){
-    startButton.classList.add("hide");
-    qContainer.classList.remove("hide")
+    console.log("hey, does this work");
+    document.querySelector(".startBtn").classList.add("hide");
+    document.querySelector(".instructions").classList.add("hide");
 
-	function showQuestions();
+    document.querySelector(".question-container").classList.remove("hide");
+
+    var questionNum = 0;
+
+	// function showQuestions();
     var myQuestions = [
         {
             question: "What are the names of the half-elves in the party?",
             answers: {
-                choiceA: 'Grog & Yasha & Keyleth',
-                choiceB: 'Keyleth & Vex & Vax',
-                choiceC: 'Pike & Beau & Vax'
+                choiceA: 'Grog, Yasha and Keyleth',
+                choiceB: 'Keyleth, Vex and Vax',
+                choiceC: 'Pike, Beau and Vax'
             },
             correctAnswer: 'b'
         },

@@ -29,10 +29,15 @@ body {
     padding: 20px;
 }
 
-.question-Container{
-    display:hide;
+
+.startBtn.hide{
+    display: none;
 }
 
-.startBtn{
-    display:hide;
+.question-container.hide{
+    display: none;
+}
+
+.instructions.hide{
+    display: none;
 }
