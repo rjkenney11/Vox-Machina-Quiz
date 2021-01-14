@@ -14,6 +14,9 @@ const choiceC = document.getElementById("c");
 var questionsDiv = document.querySelector("#questionsDiv");
 var currentQuestion = 0;
 
+var score = 0;
+var timeLeft = 0;
+var timer;
 
 var myQuestions = [
     {
@@ -24,33 +27,46 @@ var myQuestions = [
     {
         question: "What is Grog's intelligence score?",
         answers: ["10","20","6"],
-        correctAnswer: 2
+        correctAnswer: "6"
     },
     {
         question: "What is the name and kind of Vex's animal companion?",
         answers: ['Naga the Giant Serpent','Trinket the Bear','Sprinkle the Crimson Weasel'],
-        correctAnswer: 1
+        correctAnswer: 'Trinket the Bear'
     },
     {
         question: "How did Pike meet Grog?",
         answers: ['She saved his life.','They met in a bar.','He kidnapped her.'],
-        correctAnswer: 0
+        correctAnswer: 'She saved his life.'
     },
     {
         question: "What is Grog's famous catchphrase?",
         answers: ['I am super angry!','Where is my ale?','I would like to rage!'],
-        correctAnswer: 2
+        correctAnswer: 'I would like to rage!'
     },
     {
         question: "How many NPCs are named Jameson?",
         answers: ['4','3','2'],
-        correctAnswer: 1
+        correctAnswer: '3'
     },
 ];
 
 startButton.addEventListener("click", generateQuiz);
 
 function generateQuiz() {
+    timeLeft = 75;
+    document.getElementById("timeLeft").innerHTML = timeLeft;
+
+    timer = setInterval(function() {
+        timeLeft--;
+        document.getElementById("timeLeft").innerHTML = timeLeft;
+        if (timeLeft <= 0) {
+            clearInterval(timer);
+            gameOver(); 
+        }
+    }, 1000);
+
+
     console.log("hey, does this work");
     document.querySelector(".startBtn").classList.add("hide");
     document.querySelector(".instructions").classList.add("hide");
@@ -76,7 +92,7 @@ function showQuestions() {
 */   
     // We want to keep track of what question OBJECT we are currently lookin gat
     // Dynamically Create our questions and answer choices
-    title.textContent = myQuestions[currentQuestion].question
+    title.textContent = myQuestions[currentQuestion].question;
 
     // 1) Create a new HTML ELEMENT
     var btn1 = document.createElement("button");
@@ -135,6 +151,12 @@ function checkAnswer(event){
     showQuestions();
 }
 
+function gameOver(){
+    clearInterval(timer);
+}
 
-// Think about how we are going to know when we get to our last question?  --> What do you want to happen
 
+// Think about how we are going to know when we get to our last question? (how do we end the game?) --> What do you want to happen
+// How do we use a Timer in JavaScript
+// How do I display the High Scores?
+// How to I keep track of the Users Name and Score? --> Then save that into localStorage?
