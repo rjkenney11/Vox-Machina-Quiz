@@ -25,16 +25,18 @@
 
     <div class="jumbotron">
         <h1 class="display-4">Vox Machina Quiz</h1>
-        <div class="question-container hide">
-            <p class="question-holder hide"> "What are the names of the half-elves in the party?",
+
+   <!--    <div class="question-container hide">
+            <p class="question-holder hide">
             </p>
-            <p> <button class="choiceA-holder hide"> 'Grog, Yasha and Keyleth'
+            <p><button id="a" class="choiceA-holder hide" onclick="checkAnswer(0)">
             </button></p>
-            <p><button class="choiceB-holder hide"> 'Keyleth, Vex and Vax'
+            <p><button id="b" class="choiceB-holder hide" onclick="checkAnswer(1)">
             </button></p>
-            <p><button class="choiceC-holder hide"> 'Pike, Beau and Vax'
+            <p><button id="c" class="choiceC-holder hide" onclick="checkAnswer(2)">
             </button></p>
-        </div>
+        </div> 
+    -->
         <div class="instructions">
             <hr class="my-4">
             <img class="crit"
@@ -49,7 +51,14 @@
             <div><button class="startBtn">Roll Initiative!</button></div>
             </p>
         </div>
+
+        <div id="questions">
+            <h2 id="question-title"></h2>
+            <div id="choices"></div>
+        </div>
+
     </div>
+
     <script src="script.js"></script>
 </body>
 
