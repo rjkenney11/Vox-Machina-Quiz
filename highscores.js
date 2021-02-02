@@ -12,7 +12,7 @@ timeLeft.innerText = quizScore;
 
 submitBtn.addEventListener("click", function() {
     highScores.push({name: initials.value, score: quizScore});
-//   localStorage.setItem("names", JSON.stringify(initials.value));
+    
     localStorage.setItem("highScores", JSON.stringify(highScores));
     listHighScores();
 });
@@ -21,10 +21,10 @@ clear.addEventListener("click", function () {
     localStorage.clear();
     location.reload();
 });
-// Retreives local stroage
+
 highScores = JSON.parse(localStorage.getItem("highScores") || "[]");
 localStorage.setItem("highScores", JSON.stringify(highScores));
-//localStorage.setItem("names", JSON.stringify(initials.value));
+
 
 
 if (highScores !== null) {

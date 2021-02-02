@@ -86,27 +86,19 @@ function showQuestions() {
     choices.textContent = '';
 
     console.log(currentQuestion);
-/*
-    newTitle.textContent = myQuestions[currentQuestion].question;
-    choiceA.textContent = myQuestions[currentQuestion].answers[0];
-    choiceB.textContent = myQuestions[currentQuestion].answers[1];
-    choiceC.textContent = myQuestions[currentQuestion].answers[2];
-*/   
-    // We want to keep track of what question OBJECT we are currently lookin gat
+
     // Dynamically Create our questions and answer choices
     title.textContent = myQuestions[currentQuestion].question;
 
-    // 1) Create a new HTML ELEMENT
+    // Create a new HTML ELEMENT
     var btn1 = document.createElement("button");
     var btn2 = document.createElement("button");
     var btn3 = document.createElement("button");
-   // console.log(btn1);
 
-    // 2) Add and TEXT or ATTRIBUTES to our new HTML ELEMENT
+    // Add and TEXT or ATTRIBUTES to our new HTML ELEMENT
     btn1.textContent = myQuestions[currentQuestion].answers[0];
     btn1.setAttribute("value", myQuestions[currentQuestion].answers[0]);
     btn1.addEventListener("click", checkAnswer);
-    // Think about adding a button (click) listener 
 
     btn2.textContent = myQuestions[currentQuestion].answers[1];
     btn2.setAttribute("value", myQuestions[currentQuestion].answers[1]);
@@ -115,26 +107,17 @@ function showQuestions() {
     btn3.textContent = myQuestions[currentQuestion].answers[2];
     btn3.setAttribute("value", myQuestions[currentQuestion].answers[2]);
     btn3.addEventListener("click", checkAnswer);
-    // 3) We need to add this NEW ELEMENT to the DOM (or Browser window)
+    // add this NEW ELEMENT to the DOM (or Browser window)
     choices.append(btn1, btn2, btn3);
 
-
-    // Increment the currentQuestion
- 
-
- //   currentQuestion++;
-
-    // Create a function thats controlles 
- //   showNextQuestion();
 }
 
 
 function checkAnswer(event){
     console.log("click");
-    // Log the EVENT 
-    //console.log(event);
+
     console.log(event.target);
-    console.log(event.target.value);  // --> this the BUTTON ELEMENT itself
+    console.log(event.target.value);  
 
     var answer = event.target.value;
     var correctAnswer = myQuestions[currentQuestion].correctAnswer;
@@ -147,7 +130,7 @@ function checkAnswer(event){
     else{
         console.log("user answered incorrectly");
         currentQuestion++;
-        // this is the same as above
+        // this is the same as above (forgive me, graders, I'm learning and keeping this as a note)
         currentQuestion = currentQuestion + 1;
         timeLeft = timeLeft - 10;
     }
@@ -169,12 +152,5 @@ function gameOver(){
 
 function setScore() {
     localStorage.setItem("quizScore", score);
-    //localStorage.setItem("highScoreName",  document.getElementById('name').value);
-   // getScore();
 }
 
-
-// Think about how we are going to know when we get to our last question? (how do we end the game?) --> What do you want to happen
-// How do we use a Timer in JavaScript
-// How do I display the High Scores?
-// How to I keep track of the Users Name and Score? --> Then save that into localStorage
