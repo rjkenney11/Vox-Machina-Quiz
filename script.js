@@ -14,6 +14,8 @@ const choiceC = document.getElementById("c");
 var questionsDiv = document.querySelector("#questionsDiv");
 var currentQuestion = 0;
 
+var initials = document.querySelector("#initials");
+
 var score = 0;
 var timeLeft = 0;
 var timer;
@@ -52,9 +54,8 @@ var myQuestions = [
     },
 ];
 
-localStorage.setItem("highScores", JSON.stringify([{name: "RK", score: 69},{name: "AO", score: 34}]));
-
 startButton.addEventListener("click", generateQuiz);
+
 
 function generateQuiz() {
     timeLeft = 75;
@@ -73,8 +74,6 @@ function generateQuiz() {
     console.log("hey, does this work");
     document.querySelector(".startBtn").classList.add("hide");
     document.querySelector(".instructions").classList.add("hide");
-
-    // document.querySelector(".question-container").classList.remove("hide");
 
     var questionNum = 0;
     // Call (or Invoke) our Function
@@ -178,4 +177,4 @@ function setScore() {
 // Think about how we are going to know when we get to our last question? (how do we end the game?) --> What do you want to happen
 // How do we use a Timer in JavaScript
 // How do I display the High Scores?
-// How to I keep track of the Users Name and Score? --> Then save that into localStorage?
+// How to I keep track of the Users Name and Score? --> Then save that into localStorage
