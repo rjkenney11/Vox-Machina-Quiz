@@ -17,6 +17,7 @@ var currentQuestion = 0;
 var score = 0;
 var timeLeft = 0;
 var timer;
+var localStorge = window.localStorage;
 
 var myQuestions = [
     {
@@ -50,6 +51,8 @@ var myQuestions = [
         correctAnswer: '3'
     },
 ];
+
+localStorage.setItem("highScores", JSON.stringify([{name: "RK", score: 69},{name: "AO", score: 34}]));
 
 startButton.addEventListener("click", generateQuiz);
 
@@ -147,12 +150,28 @@ function checkAnswer(event){
         currentQuestion++;
         // this is the same as above
         currentQuestion = currentQuestion + 1;
+        timeLeft = timeLeft - 10;
     }
+    if(currentQuestion < myQuestions.length){
     showQuestions();
+    }
+    else{
+        gameOver();
+    }
 }
 
 function gameOver(){
+    score = timeLeft;
+    console.log(score);
     clearInterval(timer);
+    setScore();
+    window.location.href = "highscores.html";
+}
+
+function setScore() {
+    localStorage.setItem("quizScore", score);
+    //localStorage.setItem("highScoreName",  document.getElementById('name').value);
+   // getScore();
 }
 
 
