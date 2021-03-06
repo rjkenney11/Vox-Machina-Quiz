@@ -1,6 +1,4 @@
-# homework-4
-
-## Vox Machina Trivia Quiz
+# Vox Machina Trivia Quiz
 The objective of this homework was to create a short quiz that demonstrated our knowledge of Javascript fundamentals.
 
 
