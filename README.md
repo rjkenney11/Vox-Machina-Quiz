@@ -12,13 +12,13 @@ A typical coding assessment is a combination of multiple-choice questions and in
 ![image](https://user-images.githubusercontent.com/74163812/106671503-a1cf4e80-657c-11eb-86bd-58f4cbe376f2.png)
 ![image](https://user-images.githubusercontent.com/74163812/106671538-adbb1080-657c-11eb-9900-27463f8bcf31.png)
 
-<li> Test your knowledge <a href="https://rjkenney11.github.io/Rachel-Kenney-Portfolio/" target="_blank">here</a>  </li>
+<li> Test your knowledge <a href="https://rjkenney11.github.io/Vox-Machina-Quiz/" target="_blank">here</a>  </li>
 </ul>
 
 
 ## Authors
 <ul>
-<li> Rachel Kenney <a href="https://rjkenney11.github.io/Vox-Machina-Quiz/" target="_blank">rjkenney11</a> </li>
+<li> Rachel Kenney <a href="https://github.com/rjkenney11" target="_blank">rjkenney11</a> </li>
   
 </ul>
 
