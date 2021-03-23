@@ -11,7 +11,7 @@ body {
     height: 750px;
     width: 700px;
     margin-top:40px;
-    margin-left: 200px;
+    margin-left: 350px;
     font-size: large;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Pirata One', cursive;
@@ -27,7 +27,7 @@ body {
 .crit{
     height: 200px;
     width: 200px;
-    padding: 20px;
+    padding-bottom: 5px;
 }
 
 
