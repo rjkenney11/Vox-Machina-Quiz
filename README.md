@@ -17,7 +17,7 @@ A short quiz that highlights the fundamentals of javascript quiz and records use
 Test your knowledge of Critical Role's Campaign One with this quiz!
 
 ### Screenshot:
-![Image](![image](https://user-images.githubusercontent.com/74163812/106671416-819f8f80-657c-11eb-9cb2-06289676cdc5.png))
+![Image](![image](https://user-images.githubusercontent.com/74163812/106671416-819f8f80-657c-11eb-9cb2-06289676cdc5.png)
 ![image](https://user-images.githubusercontent.com/74163812/106671503-a1cf4e80-657c-11eb-86bd-58f4cbe376f2.png)
 ![image](https://user-images.githubusercontent.com/74163812/106671538-adbb1080-657c-11eb-9900-27463f8bcf31.png)
 <br />
