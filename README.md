@@ -1,10 +1,6 @@
 # Vox Machina Trivia Quiz
-The objective of this homework was to create a short quiz that demonstrated our knowledge of Javascript fundamentals.
+A short quiz that highlights the fundamentals of javascript quiz and records user scores in local storage. 
 
-
-## Motivation
-It is importatnt to learn to be able to complete assignments like this in our journey to becoming a full-stack web developers because it is likely that we will be asked to complete a coding assessment, perhaps as part of an interview process.
-A typical coding assessment is a combination of multiple-choice questions and interactive coding challenges, as is asked of us in this assignment.
 
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/74163812/106671416-819f8f80-657c-11eb-9cb2-06289676cdc5.png)
