@@ -5,12 +5,10 @@ A short quiz that highlights the fundamentals of javascript quiz and records use
 
 ### Table of Contents:
   - [Description](#description)
-  - [Installation](#installation)
   - [Usage](#usage)
   - [Screenshot](#screenshot)
   - [Contributing](#contributing)
   - [Questions](#questions)
-  - [License](#license)
 
 ### Installation:
 
