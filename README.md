@@ -1,7 +1,7 @@
 # Vox Machina Quiz
   
 ### Description: 
-A short quiz that highlights the fundamentals of javascript quiz and records user scores in local storage. 
+A short, timed quiz that highlights the fundamentals of javascript quiz and records user scores in local storage. 
 
 ### Table of Contents:
   - [Description](#description)
